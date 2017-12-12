@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/imgs.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/rem.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <div class="center_hd">
+        <div class="mybk">文章</div>
+        <div class="picture">图片</div>
+    </div>
+</header>
+<section>
+    <ul>
+        <li>
+
+            <div class="imgs"><img src="img/timg1-1.jpg" alt=""></div>
+            <div class="title">新时代编程的变革</div>
+
+        </li>
+        <li>
+
+            <div class="imgs"><img src="img/timg2-1.jpg" alt=""></div>
+            <div class="title">新时代编程的变革</div>
+
+        </li>
+        <li>
+
+            <div class="imgs"><img src="img/timg3-1.jpg" alt=""></div>
+            <div class="title">新时代编程的变革</div>
+
+        </li>
+    </ul>
+</section>
+
+</body>
+<script>
+    $('section ul').on('click','li',function () {
+        location.href='imgs_x.html';
+    })
+    $('.mybk').click(function () {
+        location.href='index.html';
+    })
+</script>
+</html>
