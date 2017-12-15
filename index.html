@@ -11,6 +11,9 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/iscroll.js"></script>
+    
     <style>
         html, body {
             position: relative;
@@ -63,15 +66,29 @@
 <body>
 <header>
 <div class="center_hd">
-    <div class="mybk">文章</div>
+<div class="min"><i class="iconfont iconfont1">&#xe603;</i></div>
+    <div class="mybk"><span>文章</span></div>
+    <p>|</p>
     <div class="picture">图片</div>
+    <div class="shou"><i class="iconfont iconfont1">&#xe600;</i></div>
 </div>
 </header>
+ <div id="wrapper">
+        <div id="scroller">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Jquery</li>
+                <li>PHP</li>
+            </ul>
+        </div>
+    </div>
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="img/timg1-1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/timg2-1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="img/timg3-1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="img/3.jpg" alt=""></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -79,29 +96,33 @@
 <section>
     <ul>
         <li>
-            <div class="leftimg">
-                <img src="img/timg.jpg" alt="">
+        <div class="neirong">
+            <div class="left">
+                <h3>讨论：2018年web前端的发展前景</h3>
+                <p>发表于：<span>11</span>分钟前&nbsp;<span>367</span>评论</p>
             </div>
-            <div class="rightext">
-                <div class="title">关于微信小程序开发的问题 以及小游戏谁是小偷的实现</div>
-            </div>
+            <div class="right"><img src="img/timg3.jpg" alt=""></div>
+        </div>
         </li>
         <li>
-            <div class="leftimg">
-                <img src="img/timg.jpg" alt="">
+        <div class="neirong">
+            <div class="left">
+                <h3>讨论：2018年web前端的发展前景</h3>
+                <p>发表于：<span>11</span>分钟前&nbsp;<span>367</span>评论</p>
             </div>
-            <div class="rightext">
-                <div class="title">关于微信小程序开发的问题 以及小游戏谁是小偷的实现</div>
-            </div>
+            <div class="right"><img src="img/2.jpg" alt=""></div>
+        </div>
         </li>
         <li>
-            <div class="leftimg">
-                <img src="img/timg.jpg" alt="">
+        <div class="neirong">
+            <div class="left">
+                <h3>讨论：2018年web前端的发展前景</h3>
+                <p>发表于：<span>11</span>分钟前&nbsp;<span>367</span>评论</p>
             </div>
-            <div class="rightext">
-                <div class="title">关于微信小程序开发的问题 以及小游戏谁是小偷的实现</div>
-            </div>
+            <div class="right"><img src="img/3.jpg" alt=""></div>
+        </div>
         </li>
+    
     </ul>
 </section>
 </body>

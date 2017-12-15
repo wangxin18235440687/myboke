@@ -5,38 +5,104 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/base.css">
+    <title>我的博客</title>
     <link rel="stylesheet" href="css/imgs.css">
+   
     <script src="js/jquery.min.js"></script>
+   
     <script src="js/rem.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 1.8rem;
+
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+        }
+        .swiper-slide img{
+
+            width: 100%;
+            height: 100%;
+
+        }
+
+    </style>
+
 </head>
 <body>
 <header>
-    <div class="center_hd">
-        <div class="mybk">文章</div>
-        <div class="picture">图片</div>
-    </div>
+<div class="center_hd">
+<div class="min"><i class="iconfont iconfont1">&#xe603;</i></div>
+    <div class="mybk"><span>文章</span></div>
+    <p>|</p>
+    <div class="picture"><span>图片</span></div>
+    <div class="shou"><i class="iconfont iconfont1">&#xe600;</i></div>
+</div>
 </header>
 <section>
     <ul>
         <li>
-
-            <div class="imgs"><img src="img/timg1-1.jpg" alt=""></div>
-            <div class="title">新时代编程的变革</div>
-
+        <div class="neirong">
+        <div class="right"><img src="img/1.jpg" alt=""></div>
+            <div class="left">
+                <h3>讨论：2018年web前端的发展前景</h3>
+                <p>发表于：<span>11</span>分钟前&nbsp;<span>367</span>评论</p>
+            </div>
+            
+        </div>
         </li>
         <li>
-
-            <div class="imgs"><img src="img/timg2-1.jpg" alt=""></div>
-            <div class="title">新时代编程的变革</div>
-
+        <div class="neirong">
+        <div class="right"><img src="img/2.jpg" alt=""></div>
+            <div class="left">
+                <h3>讨论：2018年web前端的发展前景</h3>
+                <p>发表于：<span>11</span>分钟前&nbsp;<span>367</span>评论</p>
+            </div>
+            
+        </div>
         </li>
         <li>
-
-            <div class="imgs"><img src="img/timg3-1.jpg" alt=""></div>
-            <div class="title">新时代编程的变革</div>
-
+        <div class="neirong">
+        <div class="right"><img src="img/3.jpg" alt=""></div>
+            <div class="left">
+                <h3>讨论：2018年web前端的发展前景</h3>
+                <p>发表于：<span>11</span>分钟前&nbsp;<span>367</span>评论</p>
+            </div>
+            
+        </div>
         </li>
     </ul>
 </section>
@@ -46,7 +112,7 @@
     $('section ul').on('click','li',function () {
         location.href='imgs_x.html';
     })
-    $('.mybk').click(function () {
+    $('.mybk').click(function(){
         location.href='index.html';
     })
 </script>

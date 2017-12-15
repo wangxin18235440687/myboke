@@ -1,33 +1,50 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: '宋体';
+    list-style: none;
 }
 header{
     width: 100%;
-    height: 0.7rem;
-    background: #d33e3d;
+    height: 0.5rem;
+    position: relative;
+    
 }
 .center_hd{
-    width: 60%;
+    width: 40%;
     height: 100%;
     margin: 0 auto;
 }
-.mybk{
-    width: 50%;
-    height: 100%;
+.center_hd p{
+    width: 20%;
+    font-size: 0.24rem;
     float: left;
-    font-size: 0.2rem;
-    color: yellow;
-    line-height: 0.7rem;
+    line-height: 0.5rem;
     text-align: center;
 }
-.picture{
-    width: 50%;
+.mybk{
+    width: 40%;
     height: 100%;
     float: left;
-    font-size: 0.2rem;
-    color: white;
-    line-height: 0.7rem;
+    font-size: 0.18rem;
+    
+    line-height: 0.5rem;
+    text-align: center;
+    color: orange;
+    box-sizing: border-box;
+    
+}
+.mybk span{
+    border-bottom: 0.02rem solid orange;
+    padding-bottom: 0.08rem;
+}
+.picture{
+    width: 40%;
+    height: 100%;
+    float: left;
+    font-size: 0.18rem;
+   
+    line-height: 0.5rem;
     text-align: center;
 }
 section{
@@ -41,36 +58,119 @@ section ul{
 }
 section ul li{
     width: 100%;
-    height: 1.3rem;
-    padding: 0.05rem;
+    height: 1rem;
+    padding: 0.08rem;
+    padding-bottom: 0;
     box-sizing: border-box;
-
+    
+    
 }
-.leftimg{
-    width: 45%;
-    height: 100%;
-    box-sizing: border-box;
-    padding: 0.05rem;
-    overflow: hidden;
-    float: left;
-
-}
-.leftimg img{
+.neirong{
     width: 100%;
     height: 100%;
-}
-.rightext{
-    float: left;
-    width: 55%;
-    height: 100%;
     box-sizing: border-box;
-    padding: 0.05rem;
+    border-bottom: 0.01rem solid #eee;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding-bottom: 0.08rem;
+   
+}
+.left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    box-sizing: border-box;
+    padding-right: 0.1rem;
 
 }
-.title{
-    font-size: 0.18rem;
-    color: #333;
+.left h3{
+    color: #000;
+    font-size: .16rem;
+    font-weight: 600;
+    line-height: .2rem;
+}
+.left p{
+    color: #9f9f9f;
+    font-size: .12rem;
+    line-height: .22rem;
+}
+.right{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    
+
+}
+.right img{
+    width: 100%;
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+i.iconfont1{
+    font-size: 0.24rem;
+    color: #6A7B8D;
+}
+.min{
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    left: 0.1rem;
+    top: 50%;
+    margin-top: -0.2rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+.shou{
+    width: 0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 50%;
+    margin-top: -0.2rem;
+    text-align: center;
+    line-height: 0.4rem;
+}
+#wrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0.6rem;
+    border-bottom: 0.01rem solid #666;
+    position: relative;
+    overflow: hidden;
+}
+#scroller{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 11.5rem;
+    height: 100%;
+
+}
+#scroller ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #eee;
+}
+#scroller li{
+    float: left;
+    width: 0.8rem;
+    height: 100%;
+    font-size: 0.16rem;
+    text-align: center;
+    line-height: 0.6rem;
+}
+#scroller li.active{
+    color: red;
 }

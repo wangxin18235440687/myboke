@@ -2,45 +2,109 @@
     margin: 0;
     padding: 0;
 }
+html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+            background: white;
+        }
 header{
     width: 100%;
-    height: 0.7rem;
-    background: #d33e3d;
+    height: 0.5rem;
+    box-sizing: border-box;
+    border-bottom: 0.01rem solid #eee;
 }
 .back{
     width: 15%;
     height: 100%;
-    color: white;
-    font-size: 0.5rem;
-    line-height: 0.7rem;
+    color: #6A7B8D;
+    font-size: 0.34rem;
+    line-height: 0.5rem;
     font-family: 宋体;
     text-align: center;
     float: left;
     box-sizing: border-box;
 }
-.title{
-    float: left;
-    width: 85%;
+.more{
+    width: 15%;
     height: 100%;
-    font-size: 0.18rem;
-    line-height: 0.7rem;
-    overflow: hidden;
-    color: white;
+    color: #6A7B8D;
+    font-size: 0.4rem;
+    line-height: 0.4rem;
+    font-family: 宋体;
+    text-align: center;
+    float: right;
     box-sizing: border-box;
-    padding: 0 0.05rem;
+
 }
-section{
-    width:100%;
-    height: auto;
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.imgs{
+i.iconfont1{
+    font-size: 0.24rem;
+    color: #6A7B8D;
+}
+.main{
     width: 100%;
-    overflow: hidden;
+    box-sizing: border-box;
+    
+
 }
-.imgs img{
+.main img{
     width: 100%;
+
 }
-p{
-    font-size: 0.18rem;
+.main p{
+    font-size: 0.16rem;
     line-height: 0.3rem;
+   /*  text-indent:2em; */
+    color: #3e3e3e;
+    padding: 0.08rem;
+    margin-bottom: 0.2rem;
+}
+.main h3{
+    width: 100%;
+    font-size: 0.2rem;
+    font-weight: normal;
+
+
+}
+.main h5{
+    display: block;
+    width: 100%;
+    font-size: 0.16rem;
+    font-weight: normal;
+    color: #a1a1a1;
+    margin-top: 0.2rem;
+    
+
+}
+.main h4{
+    width: 100%;
+    text-align: center;
+    font-size: 0.18rem;
+    color: #3e3e3e; 
+    padding: 0.08rem;
+    box-sizing: border-box;
+    font-weight: 600;
+    padding: 0.08rem;
+}
+.title{
+    width: 100%;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.01rem solid #eee;
+    padding: 0.08rem;
+
 }
