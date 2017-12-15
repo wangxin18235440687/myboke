@@ -127,6 +127,8 @@
 </section>
 </body>
 <script>
+    var myScroll;
+    myScroll = new IScroll('#wrapper', { scrollX: true, scrollY: false, mouseWheel: true ,click:true});
     var swiper = new Swiper('.swiper-container', {
 
         pagination: {
@@ -144,4 +146,5 @@
         location.href='imgs.html';
     })
 </script>
+
 </html>
